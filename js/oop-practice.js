@@ -34,11 +34,52 @@
 // const newAnimal = new Animal("The Animal has been created")
 // newAnimal.display()
 // STEP 5
-
+// class Animal{
+//     constructor(type, breed, color, height, length){
+//         this.type = type
+//         this.breed = breed
+//         this.color = color
+//         this.height = height
+//         this.length = length
+//     }
+// } 
+// const newAnimal = new Animal("Dog", "Pug", "Black", "2 feet", "2 feet")
 // STEP 6
-
+// class Animal{
+//     constructor(type, breed, color, height, length){
+//         this.type = type
+//         this.breed = breed
+//         this.color = color
+//         this.height = height
+//         this.length = length
+//     }
+// } 
+// const newAnimal = new Animal("Dog", "Pug", "Black", "2 feet", "2 Feet")
+// for(const property in newAnimal){
+//     console.log(`${property}: ${newAnimal[property]}`)
+// }
 // STEP 7
-
+class Animal{
+    constructor(type, breed, color, height, length){
+        this.type = type
+        this.breed = breed
+        this.color = color
+        this.height = height
+        this.length = length
+    }
+    speak(){
+        if(this.type === "Dog"){
+        console.log(`The ${this.color} dog is barking!`)
+    }else{
+        (this.type === "Cat")
+        console.log(`The ${this.color} cat is meowing!`)
+    }
+} 
+}
+const dog = new Animal("Dog", "Pug", "Black", "2 feet", "2 Feet")
+const cat = new Animal("Cat", "persian", "white", "2 feet", "3 Feet")
+dog.speak()
+cat.speak()
 // STEP 8
 
 // STEP 9

@@ -59,27 +59,60 @@
 //     console.log(`${property}: ${newAnimal[property]}`)
 // }
 // STEP 7
+// class Animal{
+//     constructor(type, breed, color, height, length){
+//         this.type = type
+//         this.breed = breed
+//         this.color = color
+//         this.height = height
+//         this.length = length
+//     }
+//     speak(){
+//         if(this.type === "Dog"){
+//         console.log(`The ${this.color} dog is barking!`)
+//     }else{
+//         (this.type === "Cat")
+//         console.log(`The ${this.color} cat is meowing!`)
+//     }
+// } 
+// }
+// const dog = new Animal("Dog", "Pug", "Black", "2 feet", "2 Feet")
+// const cat = new Animal("Cat", "persian", "white", "2 feet", "3 Feet")
+// dog.speak()
+// cat.speak()
+// STEP 8
 class Animal{
+    #type
+    #breed
+    #color
+    #height
+    #length
     constructor(type, breed, color, height, length){
-        this.type = type
-        this.breed = breed
-        this.color = color
-        this.height = height
-        this.length = length
+        this.#type = type
+        this.#breed = breed
+        this.#color = color
+        this.#height = height
+        this.#length = length
     }
-    speak(){
-        if(this.type === "Dog"){
-        console.log(`The ${this.color} dog is barking!`)
-    }else{
-        (this.type === "Cat")
-        console.log(`The ${this.color} cat is meowing!`)
+    #checkType(){
+        if(this.#type === "Dog"){
+            return "Dog"
+        // console.log(`The ${this.color} dog is barking!`)
+    }else if (this.#type === "Cat"){
+        return "cat"
+        // console.log(`The ${this.color} cat is meowing!`)
     }
+}
+    speak() {
+        console.log(`The ${this.#checkType()} has made a noise!`)
+    
 } 
 }
+
 const dog = new Animal("Dog", "Pug", "Black", "2 feet", "2 Feet")
 const cat = new Animal("Cat", "persian", "white", "2 feet", "3 Feet")
 dog.speak()
 cat.speak()
-// STEP 8
-
 // STEP 9
+String.prototype.findWords = function(words, word){
+}

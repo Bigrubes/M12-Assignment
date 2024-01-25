@@ -30,22 +30,27 @@ class Album {
         return `${this.artist} : ${this.title}. The album has been played ${this.played} times.`
     }
 }
+const $ = ()
+let jbox = new Jukebox()
+const array = [
+{album: 'Energy by Operation Ivy'},
+{album:'Dude Ranch by Blink 182,'},
+{album:'Sticks and Stones by New Found Glory'}
+]
+// jbox.addAlbum(album1)
+// jbox.addAlbum(album2)
+// jbox.addAlbum(album3)
 
-var jbox = new Jukebox()
-const album1 = new Album('Operation Ivy', 'Energy')
-const album2 = new Album('Blink 182', 'Dude Ranch')
-const album3 = new Album('New Found Glory', 'Sticks and Stones')
+// album1.play()
+// album2.play()
+// album2.play()
+// album2.play()
+// album2.play()
+// album2.play()
+// album3.play()
+const albumsDrop = document.getElementById('albums')
+array.forEach(albums =>{
 
-jbox.addAlbum(album1)
-jbox.addAlbum(album2)
-jbox.addAlbum(album3)
-
-album1.play()
-album2.play()
-album2.play()
-album2.play()
-album2.play()
-album2.play()
-album3.play()
+})
 
 console.log(`Your favorite album is: ${jbox.favoriteAlbum()}`)
